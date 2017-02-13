@@ -4,19 +4,42 @@ var state = {
   current: 0,
   questions: [
     {
+      currentChoice: 0,
       text: "Who will you be watching the movie with?",
-      choices: ["My Entire Family", "Signifigant Other", "My BFFs", "Me, Myself & I", "My Pet"]
-      /*
-    chocies: [{title:"My Entire Family",genre:0}]
-      */
+      choices: [
+        {
+          title: "My Entire Family",
+          genre: 10751,
+        },{
+          title: "Signifigant Other",
+          genre: 10749,
+        },{
+          title: "My BFFs",
+          genre: 35,
+        },{
+          title: "Me, Myself & I",
+          genre: 18,        
+        },{
+          title: "My Pet",
+          genre: 16,         
+        }
+      ],
     },
     {
       text: "Are you looking for the real deal or make believe?",
-      choices: ["100% based on fact.", "Complete fantasy."],
-    },{
-      text: "Classic or modern?",
-      choices: ["The older the better", "Does the 90s count?", "Within the past five years only."],
-    },{
+      choices: [
+        {
+          title: "100% based on fact",
+          genre: 36,
+          value: 1,
+        },{
+          title: "Complete fantasy",
+          genre: 14,
+          value: 1,
+        }
+      ],
+    },
+    {
       text: "Do you like being scared?",
       choices: ["Yes! The more terrifying the better.", "Sometimes", "No, only happy stories for me."],
     },
@@ -26,6 +49,12 @@ var state = {
     }
   ],
 };
+
+
+// what subjects are you interested in seeing?
+// which do you prefer? musicals based on real musicians, make believe stories, 
+// serious? something lighthearted, something real, 
+// how much action are you looking for?  super spy levels, family friendly-quest, a comedic buddy quest, 
 
 var categories = {
   genres: [
@@ -146,20 +175,23 @@ function displayQuizQuestions(){
   var currentQuestion = state.current;
   $('.question').text(state.questions[state.current].text);
   for (var i = 0; i < state.questions[state.current].choices.length; i++) {
-    $(".choices").append('<li id="'+ state.questions[state.current].choices.genre +'">'+state.questions[state.current].choices[i]+'</li>');
+    $(".choices").append('<li id="'+ state.questions[state.current].choices[i].genre +'">'+ state.questions[state.current].choices[i].title +'</li>');
   }
   state.current++;
 }
 
-function calculateGenreScores(){
-  //question one
-    
+
+function calculateGenreScores(){    
     $('.choices').on('click','li',function(){
       var genre = $(this).attr('id');
         $(this).addClass('chosen');
-        categories.genres[genre].score++;
+        for (var i = 0; i < categories.genres.length; i++) {
+          if(categories.genres[i].id==genre){
+            categories.genres[i].score++;
+          }
+        }
+      console.log(categories.genres);
     });
-    // console.log(categories.genres[7].score);
   
 }
 
@@ -181,7 +213,6 @@ $(document).ready(function() {
       if ((state.current) != state.questions.length) {
         $('.choices').html('');
         displayQuizQuestions();
-        calculateGenreScores();
       } else {
         $('.question-display').hide();
         $('.question-progress').hide();
@@ -190,15 +221,9 @@ $(document).ready(function() {
       }
     });
 
-
-
-
-
     getMusicalsFromApi();
     displayQuizQuestions();
-
-
-
+    calculateGenreScores();
   });
 
 
