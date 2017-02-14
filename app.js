@@ -31,30 +31,66 @@ var state = {
         {
           title: "100% based on fact",
           genre: 36,
-          value: 1,
         },{
           title: "Complete fantasy",
           genre: 14,
-          value: 1,
         }
       ],
     },
     {
       text: "Do you like being scared?",
-      choices: ["Yes! The more terrifying the better.", "Sometimes", "No, only happy stories for me."],
+      choices: [
+        {
+          title: "Yes! The more terrifying the better.",
+          genre: 27,
+        },{
+          title: "I prefer suspense over jump scares.",
+          genre: 53,
+        },{
+          title: "No, only happy stories for me.",
+          genre: 12,
+        }
+      ],
     },
     {
       text: "How do you feel about comedy?",
-      choices: ["If it's not funny, it's not worth watching.", "I like it", "It's okay, but I prefer something more serious.", "I avoid it."],
-    }
+      choices: [
+        {
+          title: "If it's not funny, it's not worth watching.",
+          genre: 35,
+        },{
+          title: "Relationship centered movies are better",
+          genre: 10749,
+        },{
+          title: "I prefer something more serious.",
+          genre: 18,
+        },{
+          title: "I avoid comedy.",
+          genre: 53,
+        }
+      ],
+    },
+     {
+      text: "From the musical lyrics below, which do you like the most?",
+      choices: [
+        {
+          title: "At least out loud, I won't say I'm in love (Herules)",
+          genre: 10749,
+        },{
+          title: "We're Cheetah Girls, Cheetah Sisters! (Cheetah Girls)",
+          genre: 10751,
+        },{
+          title: "Can't we be seventeen? That's all I want to do. (Heathers)",
+          genre: 53,
+        },{
+          title: "I am not throwing away my shot! (Hamilton)",
+          genre: 36,
+        }
+      ],
+    },   
   ],
 };
 
-
-// what subjects are you interested in seeing?
-// which do you prefer? musicals based on real musicians, make believe stories, 
-// serious? something lighthearted, something real, 
-// how much action are you looking for?  super spy levels, family friendly-quest, a comedic buddy quest, 
 
 var categories = {
   genres: [
@@ -138,6 +174,8 @@ var categories = {
   ],
 };
 
+var genresToMatch = [];
+
 //retrieve a list of musicals by searching for the keyword 'musical'
 
 function getMusicalsFromApi(){
@@ -160,14 +198,21 @@ function getMusicalsFromApi(){
 function displayMusicalsResults(results){
   console.log(results[0].poster_path);
   console.log(results[0].id);
-  /*$('.images').append('<img src="https://image.tmdb.org/t/p/w1280/' + results[0].poster_path + '">');*/
   for (var i = 0; i < 20; i++) {
     $('.results-view').append( 
       '<a href="https://www.themoviedb.org/movie/' + results[i].id + '" class="result-link">' + 
-      '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w1280/'  + results[i].poster_path + '\'">' + 
+        '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w1280/'  + results[i].poster_path + '\'">' + 
         '<p class="result-title">' + results[i].title + '</p>' + 
-      '</div></a>'
-      );
+      '</div></a>' );
+  }
+}
+
+function extractGenreResults() {
+  for (var i = 0; i < categories.genres.length; i++){
+    if (categories.genres[i].score >= 1){
+      genresToMatch.push(categories.genres[i].score);
+      console.log(genresToMatch);
+    }
   }
 }
 
