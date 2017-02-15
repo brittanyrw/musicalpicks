@@ -194,25 +194,31 @@ function getMusicalsFromApi(){
   });
 }
 
-// display results for musicals
+var genresToMatch = [];
+
+
+function checkGenreScores(){
+  for (var i = 0; i < categories.genres.length; i++){
+    if (genresToMatch.indexOf(categories.genres[i].id) == -1) {
+      if (categories.genres[i].score >= 1) {
+      genresToMatch.push(categories.genres[i].id);
+      }
+    }
+  }
+  console.log(genresToMatch);
+}
+
+
 function displayMusicalsResults(results){
   console.log(results[0].poster_path);
   console.log(results[0].id);
-  for (var i = 0; i < 20; i++) {
+  console.log(results[0].genre_ids[0]);
+  for (var i = 0; i < results.length; i++){
     $('.results-view').append( 
-      '<a href="https://www.themoviedb.org/movie/' + results[i].id + '" class="result-link">' + 
-        '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w1280/'  + results[i].poster_path + '\'">' + 
-        '<p class="result-title">' + results[i].title + '</p>' + 
-      '</div></a>' );
-  }
-}
-
-function extractGenreResults() {
-  for (var i = 0; i < categories.genres.length; i++){
-    if (categories.genres[i].score >= 1){
-      genresToMatch.push(categories.genres[i].score);
-      console.log(genresToMatch);
-    }
+    '<a href="https://www.themoviedb.org/movie/' + results[i].id + '" class="result-link">' + 
+    '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w1280/'  + results[i].poster_path + '\'">' + 
+    '<p class="result-title">' + results[i].title + '</p>' + 
+    '</div></a>' );
   }
 }
 
@@ -258,6 +264,7 @@ $(document).ready(function() {
       if ((state.current) != state.questions.length) {
         $('.choices').html('');
         displayQuizQuestions();
+        checkGenreScores();
       } else {
         $('.question-display').hide();
         $('.question-progress').hide();
