@@ -1,5 +1,3 @@
-// quiz questions
-
 var state = {
   current: 0,
   questions: [
@@ -42,10 +40,10 @@ var state = {
       choices: [
         {
           title: "Yes! The more terrifying the better.",
-          genre: 27,
+          genre: 28,
         },{
           title: "I prefer suspense over jump scares.",
-          genre: 53,
+          genre: 18,
         },{
           title: "No, only happy stories for me.",
           genre: 12,
@@ -66,7 +64,7 @@ var state = {
           genre: 18,
         },{
           title: "I avoid comedy.",
-          genre: 53,
+          genre: 12,
         }
       ],
     },
@@ -81,7 +79,7 @@ var state = {
           genre: 10751,
         },{
           title: "Can't we be seventeen? That's all I want to do. (Heathers)",
-          genre: 53,
+          genre: 12,
         },{
           title: "I am not throwing away my shot! (Hamilton)",
           genre: 36,
@@ -91,6 +89,8 @@ var state = {
   ],
 };
 
+
+// Drama, Music, Romance, Comedy, Animation, Family
 
 var categories = {
   genres: [
@@ -174,11 +174,9 @@ var categories = {
   ],
 };
 
-var genresToMatch = [];
-
 //retrieve a list of musicals by searching for the keyword 'musical'
 
-function getMusicalsFromApi(){
+/*function getMusicalsFromApi(){
   var movieParams = {
   "async": true,
   "crossDomain": true,
@@ -192,35 +190,7 @@ function getMusicalsFromApi(){
     displayMusicalsResults(musicalsResponse.results);
     console.log(musicalsResponse);
   });
-}
-
-var genresToMatch = [];
-
-
-function checkGenreScores(){
-  for (var i = 0; i < categories.genres.length; i++){
-    if (genresToMatch.indexOf(categories.genres[i].id) == -1) {
-      if (categories.genres[i].score >= 1) {
-      genresToMatch.push(categories.genres[i].id);
-      }
-    }
-  }
-  console.log(genresToMatch);
-}
-
-
-function displayMusicalsResults(results){
-  console.log(results[0].poster_path);
-  console.log(results[0].id);
-  console.log(results[0].genre_ids[0]);
-  for (var i = 0; i < results.length; i++){
-    $('.results-view').append( 
-    '<a href="https://www.themoviedb.org/movie/' + results[i].id + '" class="result-link">' + 
-    '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w1280/'  + results[i].poster_path + '\'">' + 
-    '<p class="result-title">' + results[i].title + '</p>' + 
-    '</div></a>' );
-  }
-}
+}*/
 
 function displayQuizQuestions(){
   var currentQuestion = state.current;
@@ -231,7 +201,6 @@ function displayQuizQuestions(){
   state.current++;
 }
 
-
 function calculateGenreScores(){    
     $('.choices').on('click','li',function(){
       var genre = $(this).attr('id');
@@ -241,15 +210,56 @@ function calculateGenreScores(){
             categories.genres[i].score++;
           }
         }
-      console.log(categories.genres);
+      //console.log(categories.genres);
     });
   
+}
+
+// store genres that have a score > 0
+var genresToMatch = [];
+
+function checkGenreScores(){
+  for (var i = 0; i < categories.genres.length; i++){
+    if (genresToMatch.indexOf(categories.genres[i].id) == -1 && genresToMatch.length < 2) {
+      if (categories.genres[i].score >= 1) {
+      genresToMatch.push(categories.genres[i].id);
+      }
+    }
+  }
+  //console.log(genresToMatch);
+}
+
+function searchByGenre(){
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://api.themoviedb.org/3/discover/movie?with_keywords=4344&with_genres=" + genresToMatch.join("%2C%20") + "&page=1&include_video=false&include_adult=false&sort_by=popularity.desc&language=en-US&api_key=41c96271c1abb0093a43f5f46968c3fc",
+    "method": "GET",
+    "headers": {},
+    "data": "{}"
+  }
+
+  $.ajax(settings).done(function (response) {
+    displayMusicalsResults(response.results);
+  });
+
+}
+
+function displayMusicalsResults(results){
+  for (var i = 0; i < results.length; i++){
+        $('.results-view').append( 
+        '<a href="https://www.themoviedb.org/movie/' + results[i].id + '" class="result-link">' + 
+        '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w1280/'  + results[i].poster_path + '\'">' + 
+        '<p class="result-title">' + results[i].title + '</p>' + 
+        '</div></a>' );
+  }
 }
 
 $(document).ready(function() {
     $('.question-display').hide();
     $('.question-progress').hide();
     $('.results-view').hide();
+    $('.finish').hide();
 
     //start the quiz after clicking the start button
     $('.start').click(function(event) { 
@@ -257,6 +267,8 @@ $(document).ready(function() {
       $('.text-display, .title, .header-img').hide();
       $('.question-display').show();
       $('.question-progress').show();
+      displayQuizQuestions();
+      calculateGenreScores();
     });
 
     //continue to the next question and add scores to genres, after all questions show results screen
@@ -266,16 +278,19 @@ $(document).ready(function() {
         displayQuizQuestions();
         checkGenreScores();
       } else {
-        $('.question-display').hide();
-        $('.question-progress').hide();
-        $('.placeholder').hide(); //change to illustration
-        $('.results-view').show();
+        $('.finish').show();
       }
     });
 
-    getMusicalsFromApi();
-    displayQuizQuestions();
-    calculateGenreScores();
+    $('.finish').click(function(event){
+      $('.question-display').hide();
+      $('.question-progress').hide();
+      $('.placeholder').hide(); //change to illustration
+      searchByGenre();
+      $('.results-view').show();
+      displayMusicalsResults();
+        });
+
   });
 
 
