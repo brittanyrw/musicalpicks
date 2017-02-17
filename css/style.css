@@ -14,25 +14,26 @@ body {
   background: white; }
 
 .text-display, .question-display {
-  background: #CCC;
-  border-radius: 50px;
   padding: 20px;
-  margin: 50px auto;
-  font-size: 2em; }
+  margin: 20px auto;
+  font-size: 2em;
+  border: 2px solid red; }
   .text-display p, .question-display p {
     font-size: 1.5em; }
 
 /* HOME VIEW */
 header {
-  margin-bottom: 50px; }
+  margin: 0 auto; }
   header .header-img {
-    width: 100%;
-    left: 0; }
-  header .title {
-    width: 90%;
+    background: url("../imgs/titlesign.svg") no-repeat;
+    height: 500px;
     margin: 0 auto;
-    border: 10px solid #888;
-    font-size: 2em; }
+    width: 100%; }
+  header .header-title {
+    font-size: 4em;
+    color: pink;
+    margin: 0;
+    width: 100%; }
 
 .start, .next {
   font-size: 1.5em;
@@ -44,7 +45,7 @@ header {
 
 .placeholder {
   width: 95%;
-  height: 500px;
+  height: 450px;
   margin: 0 auto;
   background: #888; }
 
