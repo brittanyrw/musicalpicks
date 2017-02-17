@@ -6,7 +6,6 @@
 
 body {
 	text-align: center;
-	background: #CCC;
 }
 
 .main-container {
@@ -14,7 +13,6 @@ body {
 	width: 100%;
 	margin: 100px auto 0 auto;
 	padding: 40px;
-	border: 1px solid #888;
 	border-radius: 10px 10px 0 0;
 	background: white;
 }
@@ -33,10 +31,9 @@ body {
 /* HOME VIEW */
 
 header {
+	margin-bottom: 50px;
 	.header-img {
-		position: absolute;
 		width: 100%;
-		margin: -110px 0 0 0;
 		left: 0;
 	}
 	.title {

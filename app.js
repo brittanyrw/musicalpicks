@@ -89,9 +89,6 @@ var state = {
   ],
 };
 
-
-// Drama, Music, Romance, Comedy, Animation, Family
-
 var categories = {
   genres: [
     {
@@ -174,7 +171,6 @@ var categories = {
   ],
 };
 
-//retrieve a list of musicals by searching for the keyword 'musical'
 
 /*function getMusicalsFromApi(){
   var movieParams = {
@@ -203,19 +199,20 @@ function displayQuizQuestions(){
 
 function calculateGenreScores(){    
     $('.choices').on('click','li',function(){
-      var genre = $(this).attr('id');
+      if($('.chosen').length==0){
+        var genre = $(this).attr('id');
         $(this).addClass('chosen');
         for (var i = 0; i < categories.genres.length; i++) {
           if(categories.genres[i].id==genre){
             categories.genres[i].score++;
           }
         }
+      }
       //console.log(categories.genres);
     });
   
 }
 
-// store genres that have a score > 0
 var genresToMatch = [];
 
 function checkGenreScores(){
@@ -261,7 +258,7 @@ $(document).ready(function() {
     $('.results-view').hide();
     $('.finish').hide();
 
-    //start the quiz after clicking the start button
+    //start the quiz after clicking the stateart button
     $('.start').click(function(event) { 
       event.preventDefault();
       $('.text-display, .title, .header-img').hide();
@@ -288,7 +285,7 @@ $(document).ready(function() {
       $('.placeholder').hide(); //change to illustration
       searchByGenre();
       $('.results-view').show();
-      displayMusicalsResults();
+      //displayMusicalsResults();
         });
 
   });

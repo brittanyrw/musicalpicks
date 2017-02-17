@@ -3,15 +3,13 @@
   box-sizing: border-box; }
 
 body {
-  text-align: center;
-  background: #CCC; }
+  text-align: center; }
 
 .main-container {
   position: relative;
   width: 100%;
   margin: 100px auto 0 auto;
   padding: 40px;
-  border: 1px solid #888;
   border-radius: 10px 10px 0 0;
   background: white; }
 
@@ -25,16 +23,16 @@ body {
     font-size: 1.5em; }
 
 /* HOME VIEW */
-header .header-img {
-  position: absolute;
-  width: 100%;
-  margin: -110px 0 0 0;
-  left: 0; }
-header .title {
-  width: 90%;
-  margin: 0 auto;
-  border: 10px solid #888;
-  font-size: 2em; }
+header {
+  margin-bottom: 50px; }
+  header .header-img {
+    width: 100%;
+    left: 0; }
+  header .title {
+    width: 90%;
+    margin: 0 auto;
+    border: 10px solid #888;
+    font-size: 2em; }
 
 .start, .next {
   font-size: 1.5em;
