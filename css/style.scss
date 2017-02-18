@@ -1,29 +1,42 @@
 /* GENERAL */
 
+$red: #C1272D;
+$gray: #888888;
+$darkgray: #1C2833;
+
+$open: 'Open Sans', sans-serif;
+$oswald:'Oswald', sans-serif;
+
 * {
 	box-sizing: border-box;
 }
 
 body {
 	text-align: center;
+	background: $darkgray;
+	margin: 50px;
 }
 
 .main-container {
 	position: relative;
 	width: 100%;
-	margin: 100px auto 0 auto;
+	margin: 20px auto 0 auto;
 	padding: 40px;
 	border-radius: 10px 10px 0 0;
 	background: white;
 }
 
-.text-display {
+.home-text-display, .results-text-display {
 	padding: 20px;
 	margin: 20px auto;
-	font-size: 2em;
-	border: 2px solid red;
+	border: 5px solid $red;
+	font-size: 1.5em;
+	h2 {
+		font-family: $oswald;
+	}
 	p {
 		font-size: 1.5em;
+		font-family: $open;
 	}
 }
 
@@ -32,23 +45,24 @@ body {
 header {
 	margin: 0 auto;
 	.header-img {
-	background: url("../imgs/titlesign.svg") no-repeat;
-	height: 500px;
 	margin: 0 auto;
 	width: 100%;
-}
-	.header-title {
-		font-size: 4em;
-		color: pink;
-		margin: 0;
-		width: 100%;
 	}
 }
 
-.start, .next {
+.start, .next, .finish, .restart, .search {
 	font-size: 1.5em;
 	margin: 0 auto;
-	border: 1px solid black;
+	border: none;
+	padding: 10px 60px;
+	margin: 10px;
+	color: white;
+	background: $red;
+	box-shadow: 5px 5px 0px $gray;
+}
+
+.start:active, .next:active {
+	transform: translateY(4px);
 }
 
 .illustration {
@@ -65,14 +79,22 @@ header {
 /* QUESTION VIEW */
 
 .question-display {
-	@extend .text-display; 
+	padding: 20px;
+	margin: 20px auto;
+	border: 5px solid $red;
+	font-size: 1.5em;
+	h1 {
+		font-family: $oswald;
+		font-size: 2em;
+	}
 }
 
 .question-progress {
-	height: 150px;
-	width: 90%;
-	margin: 0 auto;
-	background: #888;
+	width: 100%;
+	margin: 10px auto -10px auto;
+	img {
+		margin-bottom: -20px;
+	}
 }
 
 ul {
@@ -82,14 +104,15 @@ ul {
 }
 
 li {
-	border: 1px solid black;
-	padding: 5px;
+	padding: 10px 5px;
 	margin: 20px;
-	font-size: 2em;
+	font-size: 1.7em;
+	font-family: $open;
 }
 
 .chosen {
-	border: 1px solid white;
+	color: white;
+	background: $red;
 }
 
 /* RESULTS VIEW */
@@ -97,12 +120,11 @@ li {
 .results-view { 
 	width: 95%;
 	margin: 0 auto;
-	background: #888;
 }
 
 .result-item {
-    height: 850px;
-    border: 1px solid red;
+    height: 950px;
+    border: 5px solid black;
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -112,11 +134,12 @@ p.result-title {
     position: absolute;
     bottom: 0;
     font-size: 50px;
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(193,39,45,0.75);
     width: 100%;
     padding: 20px;
-    color: black;
+    color: white;
     margin: 0;
+    font-family: $open;
 }
 
 a.result-link {
@@ -128,7 +151,7 @@ a.result-link {
 /* FOOTER */
 
 footer {
-	background: #888;
+	background: $red;
 	width: 100%;
 	margin: 0;
 	padding: 10px 20px;
@@ -137,7 +160,26 @@ footer {
 }
 
 .fa {
-	color: black;
+	color: white;
 }
 
+/*min 425 - max 375
+
+.header-img height 200px
+.main-container margin 0;
+
+.home-textdisplay p 1 em font-size
+
+min 426 @ 693 max
+.header-img height 400px;
+
+desktop 
+
+	position: relative;
+	width: 60%;
+	margin: 10px auto 0 auto;
+	padding: 40px;
+	border-radius: 10px 10px 0 0;
+	background: white;
+}*/
 
