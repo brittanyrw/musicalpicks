@@ -30,10 +30,10 @@ var state = {
       text: "Are you looking for the real deal or make believe?",
       choices: [
         {
-          title: "100% based on fact",
+          title: "Plots based on facts",
           genre: 36,
         },{
-          title: "Complete fantasy",
+          title: "Fantasy is fun",
           genre: 14,
         }
       ],
@@ -45,13 +45,13 @@ var state = {
       text: "Do you like being scared?",
       choices: [
         {
-          title: "Yes! The more terrifying the better.",
+          title: "The more terrifying the better",
           genre: 28,
         },{
-          title: "I prefer suspense over jump scares.",
+          title: "I prefer suspense over jump scares",
           genre: 18,
         },{
-          title: "No, only happy stories for me.",
+          title: "No, only happy stories for me",
           genre: 12,
         }
       ],
@@ -63,16 +63,16 @@ var state = {
       text: "How do you feel about comedy?",
       choices: [
         {
-          title: "If it's not funny, it's not worth watching.",
+          title: "If it's not funny, it's not worth watching",
           genre: 35,
         },{
           title: "Relationship centered movies are better",
           genre: 10749,
         },{
-          title: "I prefer something more serious.",
+          title: "I prefer something more serious",
           genre: 18,
         },{
-          title: "I avoid comedy.",
+          title: "I avoid comedy",
           genre: 12,
         }
       ],
@@ -87,13 +87,13 @@ var state = {
           title: "At least out loud, I won't say I'm in love (Herules)",
           genre: 10749,
         },{
-          title: "We're Cheetah Girls, Cheetah Sisters! (Cheetah Girls)",
+          title: "We're Cheetah Girls, Cheetah Sisters (Cheetah Girls)",
           genre: 10751,
         },{
-          title: "Can't we be seventeen? That's all I want to do. (Heathers)",
+          title: "Can't we be seventeen? That's all I want to do (Heathers)",
           genre: 12,
         },{
-          title: "I am not throwing away my shot! (Hamilton)",
+          title: "I am not throwing away my shot (Hamilton)",
           genre: 36,
         }
       ],
@@ -222,6 +222,7 @@ function checkGenreScores(){
       }
     }
   }
+  console.log(genresToMatch);
 }
 
 function searchByGenre(){
@@ -252,14 +253,13 @@ function displayMusicalsResults(results){
 
 var userGenre = [];
 
-function displayUserGenreResults(){
-    $('.genre-buttons').on('click','li',function(){
-      userGenre.push($(this).attr('id'));
+function userGenreSearchList(){
+    $('.genre-buttons').on('click','button',function(){
+      userGenre.push(parseInt($(this).attr('id')));
       console.log(userGenre);
     });
   
 }
-
 
 function searchByUserGenre(){
   var settings = {
@@ -273,7 +273,7 @@ function searchByUserGenre(){
 
   $.ajax(settings).done(function (response) {
     displayUserGenreSearchResults(response.results);
-    console.log(response.results);
+    console.log(userGenre);
   });
 
 }
@@ -286,6 +286,7 @@ function displayUserGenreSearchResults(results){
           '<p class="result-title">' + results[i].title + '</p>' + 
           '</div></a>' );
     }
+
   } 
 
 $(document).ready(function() {
@@ -327,7 +328,17 @@ $(document).ready(function() {
       //displayMusicalsResults();
         });
     $('.restart').click(function(event){
-
+      state.current = 0;
+      $('.results-view').html('');
+      for (var i = 0; i < categories.genres[i].score; i++){
+        score = 0;
+      }
+      $('.results').hide();
+      $('.choices').html('');
+      $('.additional-results').hide();
+      $('.home-text-display, .header-img').show();
+      $('.home-image').show();
+      $('.finish').hide();
 
     });
 
@@ -337,6 +348,7 @@ $(document).ready(function() {
     });
 
     $('.genre').click(function(event){
+      userGenreSearchList();
       searchByUserGenre();
     });
   });
