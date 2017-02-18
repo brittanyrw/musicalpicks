@@ -12,21 +12,19 @@
 	<section class="main-container">
 		<!-- Home view -->
 		<header>
-			<div class="header-img">
-				<h1 class="header-title">MusicalPicks</h1>
-			</div>
+			<img src="imgs/titlesign.svg" class="header-img" alt="Title sign">
 		</header>
 
-		<section class="text-display"> 
+		<section class="home-text-display"> 
 		<!-- Welcome message, quiz end message, additional results message -->
-			<h2 class="text-title">Find personalized recommendations for movie musicals</h2>
-			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim erat sit amet tellus vehicula, et feugiat augue mollis.</p>
+			<h2 class="text-title">Find personalized recommendations for movie musicals.</h2>
+			<p class="text">Take a short quiz to discover movie musicals based on your personal preferences.</p>
 			<button type="button" type="submit" class="start">START</button>
 		</section>
 
 		<!-- Question view -->
 		<section class="question-progress">
-			<div class="progress-placeholder"></div>
+			<!---<img src="imgs/quiz-progress.svg" class="quiz-progress-img" alt="quiz progress bar">-->
 		</section>
 
 		<section class="question-display">
@@ -36,20 +34,42 @@
 			<button type="button" type="submit" class="finish">FINISH</button>
 		</section>
 
-		<!-- Image and Buttons Container -->
-		<section class="illustration">
+		<!-- results view -->
+		<section class="results">
+			<section class="results-text-display"> 
+			<!-- Results/Quiz End Message-->
+				<h2 class="text-title">Congrats! You have completed the quiz. View your results below.</h2>
+				<p class="text">Search for additional musicals by genre by clicking the search button below.</p>
+				<div class="results-buttons">
+					<button type="button" type="submit" class="restart">RESTART</button>
+					<button type="button" type="submit" class="search">SEARCH</button>
+				</div>
+			</section>
+			<section class="results-view"></section>
+		</section>
+				
+		<!-- additional results view -->
+		<section class="additional-results">
+			<p></p>
+			<div class="genre-buttons">
+				<button type="button" type="submit" class="genre">GENRE</button>
+				<button type="button" type="submit" class="genre">GENRE</button>
+				<button type="button" type="submit" class="genre">GENRE</button>
+				<button type="button" type="submit" class="genre">GENRE</button>
+				<button type="button" type="submit" class="genre">GENRE</button>
+				<button type="button" type="submit" class="genre">GENRE</button>
+			</div>
+			<button type="button" type="submit" class="add-search">SEARCH</button>	
+		</section>
+
+		<!-- Front Page Image Container -->
+		<section class="home-image" class="illustration-items">
 			<img src="imgs/Theaterfront.svg" class="illustration">
 		</section>
 
-		<!-- results view & additional results view-->
-		<section class="results">
-			<p></p>
-			<div class="results-buttons">
-				<button type="button" type="submit" class="restart">RESTART</button>
-				<button type="button" type="submit" class="search">SEARCH</button>			
-			</div>
-			<section class="results-view"></section>
-		</section>
+		<!-- Question Image Container -->
+		<section class="question-image" class="illustration-items"></section>
+
 	</section>
 
 	<footer>
