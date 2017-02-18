@@ -22,6 +22,9 @@ var state = {
           genre: 16,         
         }
       ],
+      image: "imgs/dressingroom.svg",
+      alt: "theatre dressing room illustration",
+      progress: "imgs/quiz-progress-one.svg",
     },
     {
       text: "Are you looking for the real deal or make believe?",
@@ -34,6 +37,9 @@ var state = {
           genre: 14,
         }
       ],
+      image: "imgs/dressingroom.svg",
+      alt: "theatre dressing room illustration",
+      progress: "imgs/quiz-progress-two.svg",
     },
     {
       text: "Do you like being scared?",
@@ -49,6 +55,9 @@ var state = {
           genre: 12,
         }
       ],
+      image: "imgs/dressingroom.svg",
+      alt: "theatre dressing room illustration",
+      progress: "imgs/quiz-progress-three.svg",
     },
     {
       text: "How do you feel about comedy?",
@@ -67,6 +76,9 @@ var state = {
           genre: 12,
         }
       ],
+      image: "imgs/dressingroom.svg",
+      alt: "theatre dressing room illustration",
+      progress: "imgs/quiz-progress-four.svg",
     },
      {
       text: "From the musical lyrics below, which do you like the most?",
@@ -85,6 +97,9 @@ var state = {
           genre: 36,
         }
       ],
+      image: "imgs/dressingroom.svg",
+      alt: "theatre dressing room illustration",
+      progress: "imgs/quiz-progress-five.svg",
     },   
   ],
 };
@@ -191,6 +206,8 @@ var categories = {
 function displayQuizQuestions(){
   var currentQuestion = state.current;
   $('.question').text(state.questions[state.current].text);
+  $('.question-image').html('<img src="' + state.questions[state.current].image + '" alt="' + state.questions[state.current].imagealt + '">');
+  $('.question-progress').html('<img src="' + state.questions[state.current].progress + '">');
   for (var i = 0; i < state.questions[state.current].choices.length; i++) {
     $(".choices").append('<li id="'+ state.questions[state.current].choices[i].genre +'">'+ state.questions[state.current].choices[i].title +'</li>');
   }
@@ -223,7 +240,6 @@ function checkGenreScores(){
       }
     }
   }
-  //console.log(genresToMatch);
 }
 
 function searchByGenre(){
@@ -255,15 +271,18 @@ function displayMusicalsResults(results){
 $(document).ready(function() {
     $('.question-display').hide();
     $('.question-progress').hide();
-    $('.results-view').hide();
+    $('.question-image').hide();
+    $('.results').hide();
+    $('.additional-results').hide();
     $('.finish').hide();
 
-    //start the quiz after clicking the stateart button
     $('.start').click(function(event) { 
       event.preventDefault();
-      $('.text-display, .title, .header-img').hide();
+      $('.home-text-display, .header-img').hide();
+      $('.home-image').hide();
       $('.question-display').show();
       $('.question-progress').show();
+      $('.question-image').show();
       displayQuizQuestions();
       calculateGenreScores();
     });
@@ -282,11 +301,16 @@ $(document).ready(function() {
     $('.finish').click(function(event){
       $('.question-display').hide();
       $('.question-progress').hide();
-      $('.placeholder').hide(); //change to illustration
+      $('.question-image').hide();
       searchByGenre();
-      $('.results-view').show();
+      $('.header-img').show();
+      $('.results').show();
       //displayMusicalsResults();
         });
+    $('.restart').click(function(event){
+
+
+    });
 
   });
 
