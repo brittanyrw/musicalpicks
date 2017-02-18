@@ -29,7 +29,7 @@ body {
 .home-text-display, .results-text-display {
 	padding: 20px;
 	margin: 20px auto;
-	border: 5px solid $red;
+	border: 5px solid $darkgray;
 	font-size: 1.5em;
 	h2 {
 		font-family: $oswald;
@@ -50,7 +50,7 @@ header {
 	}
 }
 
-.start, .next, .finish, .restart, .search {
+.start, .next, .finish, .restart, .search, .add-search {
 	font-size: 1.5em;
 	margin: 0 auto;
 	border: none;
@@ -81,7 +81,7 @@ header {
 .question-display {
 	padding: 20px;
 	margin: 20px auto;
-	border: 5px solid $red;
+	border: 5px solid $darkgray;
 	font-size: 1.5em;
 	h1 {
 		font-family: $oswald;
@@ -146,6 +146,19 @@ a.result-link {
     overflow: auto;
     margin-bottom: 20px;
     display: block;
+}
+
+
+/* ADDITIONAL RESULTS */
+
+.genre {
+	font-size: 1.5em;
+	margin: 0 auto;
+	border: none;
+	padding: 30px;
+	margin: 10px;
+	color: white;
+	background: $darkgray;
 }
 
 /* FOOTER */

@@ -186,23 +186,6 @@ var categories = {
   ],
 };
 
-
-/*function getMusicalsFromApi(){
-  var movieParams = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://api.themoviedb.org/3/discover/movie?with_keywords=4344&include_video=false&include_adult=false&sort_by=popularity.desc&language=en-US&api_key=41c96271c1abb0093a43f5f46968c3fc",
-  "method": "GET",
-  "headers": {},
-  "data": "{}"
-}
-
-  $.ajax(movieParams).done(function (musicalsResponse) {
-    displayMusicalsResults(musicalsResponse.results);
-    console.log(musicalsResponse);
-  });
-}*/
-
 function displayQuizQuestions(){
   var currentQuestion = state.current;
   $('.question').text(state.questions[state.current].text);
@@ -225,7 +208,6 @@ function calculateGenreScores(){
           }
         }
       }
-      //console.log(categories.genres);
     });
   
 }
@@ -268,6 +250,44 @@ function displayMusicalsResults(results){
   }
 }
 
+var userGenre = [];
+
+function displayUserGenreResults(){
+    $('.genre-buttons').on('click','li',function(){
+      userGenre.push($(this).attr('id'));
+      console.log(userGenre);
+    });
+  
+}
+
+
+function searchByUserGenre(){
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://api.themoviedb.org/3/discover/movie?with_keywords=4344&with_genres=" + userGenre + "&page=1&include_video=false&include_adult=false&sort_by=popularity.desc&language=en-US&api_key=41c96271c1abb0093a43f5f46968c3fc",
+    "method": "GET",
+    "headers": {},
+    "data": "{}"
+  }
+
+  $.ajax(settings).done(function (response) {
+    displayUserGenreSearchResults(response.results);
+    console.log(response.results);
+  });
+
+}
+
+function displayUserGenreSearchResults(results){
+     for (var i = 0; i < results.length; i++){
+          $('.additional-results-items').append( 
+          '<a href="https://www.themoviedb.org/movie/' + results[i].id + '" class="result-link">' + 
+          '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w1280/'  + results[i].poster_path + '\'">' + 
+          '<p class="result-title">' + results[i].title + '</p>' + 
+          '</div></a>' );
+    }
+  } 
+
 $(document).ready(function() {
     $('.question-display').hide();
     $('.question-progress').hide();
@@ -287,7 +307,6 @@ $(document).ready(function() {
       calculateGenreScores();
     });
 
-    //continue to the next question and add scores to genres, after all questions show results screen
     $('.next').click(function(event){
       if ((state.current) != state.questions.length) {
         $('.choices').html('');
@@ -312,6 +331,14 @@ $(document).ready(function() {
 
     });
 
+    $('.search').click(function(event) {
+      $('.results').hide();
+      $('.additional-results').show();
+    });
+
+    $('.genre').click(function(event){
+      searchByUserGenre();
+    });
   });
 
 
