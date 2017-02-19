@@ -185,6 +185,62 @@ footer {
 	margin: 10px;
 }
 
+
+@media screen and (max-width: 425px) and (-webkit-min-device-pixel-ratio: 1) { 
+  	body {
+  		background: green;
+  	}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) { 
+  	body {
+  		background: pink;
+  	}
+}
+
+@media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) { 
+  	body {
+  		background: orange;
+  	}
+
+  	.main-container {
+  		width: 60%;
+  	}
+
+  	footer {
+  		width: 60%;
+  		margin: 0 auto;
+  	}
+
+  	.start, .next, .finish, .restart, .search, .add-search {
+  		font-size: 1em;
+  	}
+
+  	.home-text-display, .results-text-display {
+  		font-size: 1em;
+  	}
+
+  	.question-display {
+  		font-size: 1em;
+  	}
+
+  	p.result-title {
+  		font-size: 1em;
+  	}
+
+  	.result-item {
+  		display: inline-block;
+  		height: 450px;
+  		width: 45%;
+  		margin: 10px;
+  	}
+
+  	a.result-link {
+  		display: inline;
+  	}
+}
+
+
 /*min 425 - max 375
 
 .header-img height 200px
