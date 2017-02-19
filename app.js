@@ -190,7 +190,7 @@ function displayQuizQuestions(){
   var currentQuestion = state.current;
   $('.question').text(state.questions[state.current].text);
   $('.question-image').html('<img src="' + state.questions[state.current].image + '" alt="' + state.questions[state.current].imagealt + '">');
-  $('.question-progress').html('<img src="' + state.questions[state.current].progress + '">');
+  $(".question-progress-img").attr("src", state.questions[state.current].progress);
   for (var i = 0; i < state.questions[state.current].choices.length; i++) {
     $(".choices").append('<li id="'+ state.questions[state.current].choices[i].genre +'">'+ state.questions[state.current].choices[i].title +'</li>');
   }
@@ -223,6 +223,13 @@ function checkGenreScores(){
     }
   }
   console.log(genresToMatch);
+}
+
+function emptyGenreScores(){
+  genresToMatch.length = 0;
+  for (var i = 0; i < categories.genres[i].score; i++){
+        categories.genres[i].score = 0;
+  }
 }
 
 function searchByGenre(){
@@ -325,21 +332,18 @@ $(document).ready(function() {
       searchByGenre();
       $('.header-img').show();
       $('.results').show();
-      //displayMusicalsResults();
         });
+
     $('.restart').click(function(event){
       state.current = 0;
+      emptyGenreScores();
       $('.results-view').html('');
-      for (var i = 0; i < categories.genres[i].score; i++){
-        score = 0;
-      }
       $('.results').hide();
       $('.choices').html('');
       $('.additional-results').hide();
       $('.home-text-display, .header-img').show();
       $('.home-image').show();
       $('.finish').hide();
-
     });
 
     $('.search').click(function(event) {
@@ -351,6 +355,7 @@ $(document).ready(function() {
       userGenreSearchList();
       searchByUserGenre();
     });
+
   });
 
 
