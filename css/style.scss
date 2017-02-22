@@ -48,6 +48,13 @@ body {
 	margin: 10px;
 	color: white;
 	background: $red;
+}
+
+.next, .finish {
+	box-shadow: 5px 5px 0px white;
+}
+
+.start, .restart, .search, .add-search {
 	box-shadow: 5px 5px 0px $darkgray;
 }
 
@@ -117,10 +124,6 @@ li {
 .chosen {
 	color: white;
 	background: $red;
-}
-
-.next {
-	box-shadow: 5px 5px 0px white;
 }
 
 /* RESULTS VIEW */

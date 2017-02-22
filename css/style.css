@@ -33,7 +33,12 @@ body {
   padding: 10px 60px;
   margin: 10px;
   color: white;
-  background: #C1272D;
+  background: #C1272D; }
+
+.next, .finish {
+  box-shadow: 5px 5px 0px white; }
+
+.start, .restart, .search, .add-search {
   box-shadow: 5px 5px 0px #1C2833; }
 
 /* HOME VIEW */
@@ -89,9 +94,6 @@ li {
 .chosen {
   color: white;
   background: #C1272D; }
-
-.next {
-  box-shadow: 5px 5px 0px white; }
 
 /* RESULTS VIEW */
 .results-view {
