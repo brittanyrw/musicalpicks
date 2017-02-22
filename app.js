@@ -315,7 +315,7 @@ $(document).ready(function() {
     });
 
     $('.finish').click(function(event){
-      $('.search').hide(); //hiding additional search function while developing
+      $('.search').hide(); //hiding additional search function while developing feature
       $('.question-display, .question-progress, .question-image').hide();
       searchByGenre();
       $('.header-img, .results').show();
