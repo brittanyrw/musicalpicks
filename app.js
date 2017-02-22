@@ -37,7 +37,7 @@ var state = {
           genre: 14,
         }
       ],
-      image: "imgs/dressingroom.svg",
+      image: "imgs/costumes.svg",
       alt: "theatre dressing room illustration",
       progress: "imgs/quiz-progress-two.svg",
     },
@@ -76,7 +76,7 @@ var state = {
           genre: 12,
         }
       ],
-      image: "imgs/dressingroom.svg",
+      image: "imgs/costumes.svg",
       alt: "theatre dressing room illustration",
       progress: "imgs/quiz-progress-four.svg",
     },
@@ -262,8 +262,9 @@ var userGenre = [];
 
 function userGenreSearchList(){
     $('.genre-buttons').on('click','button',function(){
-      userGenre.push(parseInt($(this).attr('id')));
-      console.log(userGenre);
+      if (userGenre.indexOf($(this).attr('id')) == -1) {
+        userGenre.push(parseInt($(this).attr('id')));
+      }
     });
   
 }
