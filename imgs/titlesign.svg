@@ -28,9 +28,10 @@
 	.st21{fill:#FFFFFF;stroke:#231F20;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
 	.st22{display:none;opacity:0.26;}
 	.st23{display:inline;fill:url(#New_Pattern_Swatch_23);}
-	.st24{font-family:'Oswald-Light';}
-	.st25{font-size:102.1153px;}
-	.st26{font-family:'Oswald-Medium';}
+	.st24{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st25{font-family:'Oswald-Light';}
+	.st26{font-size:102.1153px;}
+	.st27{font-family:'Oswald-Medium';}
 </style>
 <pattern  x="-147.8" y="-15" width="10" height="10" patternUnits="userSpaceOnUse" id="New_Pattern_Swatch_23" viewBox="0 -10 10 10" style="overflow:visible;">
 	<g>
@@ -328,8 +329,8 @@
 			c11.6,0,21.1-9.4,21.1-21.1V235.1C733.5,223.4,724,214,712.4,214L712.4,214z"/>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 444.7138 322.3037)" class="st5 st24 st25">Picks</text>
-		<text transform="matrix(1 0 0 1 145.4999 322.3037)" class="st5 st26 st25">Musical</text>
+		<text transform="matrix(1 0 0 1 444.7138 322.3037)" class="st24 st25 st26">Picks</text>
+		<text transform="matrix(1 0 0 1 145.4999 322.3037)" class="st24 st27 st26">Musical</text>
 	</g>
 </g>
 </svg>
