@@ -21,7 +21,7 @@ body {
   border: 5px solid #1C2833;
   font-size: 1.5em; }
   .home-text-display h2, .results-text-display h2 {
-    font-family: "Oswald", sans-serif; }
+    font-family: "Open Sans", sans-serif; }
   .home-text-display p, .results-text-display p {
     font-size: 1.5em;
     font-family: "Open Sans", sans-serif; }
@@ -144,9 +144,22 @@ footer {
   color: white;
   margin: 10px; }
 
+.social {
+  display: inline-block; }
+
+.credit {
+  display: inline-block;
+  margin: 0 0 0 20px; }
+
 .tmdb {
   margin: 20px 0 0 0;
-  width: 120px; }
+  width: 50px;
+  display: inline; }
+
+.credit-text {
+  font-size: 1em;
+  display: inline-block;
+  width: 190px; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1023px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
