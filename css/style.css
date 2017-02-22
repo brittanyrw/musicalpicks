@@ -156,10 +156,10 @@ footer {
     color: #C1272D; } }
 @media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .main-container {
-    width: 60%; }
+    width: 80%; }
 
   footer {
-    width: 60%;
+    width: 80%;
     margin: 0 auto; }
 
   .start, .next, .finish, .restart, .search, .add-search {
@@ -176,8 +176,8 @@ footer {
 
   .result-item {
     display: inline-block;
-    height: 540px;
-    width: 340px;
+    height: 400px;
+    width: 270px;
     margin: 10px; }
 
   a.result-link {
