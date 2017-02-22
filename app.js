@@ -252,9 +252,7 @@ function displayMusicalsResults(results){
   for (var i = 0; i < results.length; i++){
         $('.results-view').append( 
         '<a href="https://www.themoviedb.org/movie/' + results[i].id + '" class="result-link">' + 
-        '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w1280/'  + results[i].poster_path + '\'">' + 
-        '<p class="result-title">' + results[i].title + '</p>' + 
-        '</div></a>' );
+        '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w1280/'  + results[i].poster_path + '\'">' + '</div></a>' );
   }
 }
 
@@ -290,9 +288,7 @@ function displayUserGenreSearchResults(results){
      for (var i = 0; i < results.length; i++){
           $('.additional-results-items').append( 
           '<a href="https://www.themoviedb.org/movie/' + results[i].id + '" class="result-link">' + 
-          '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w1280/'  + results[i].poster_path + '\'">' + 
-          '<p class="result-title">' + results[i].title + '</p>' + 
-          '</div></a>' );
+          '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w1280/'  + results[i].poster_path + '\'">' + '</div></a>' );
     }
 
   } 
@@ -319,6 +315,7 @@ $(document).ready(function() {
     });
 
     $('.finish').click(function(event){
+      $('.search').hide(); //hiding additional search function while developing
       $('.question-display, .question-progress, .question-image').hide();
       searchByGenre();
       $('.header-img, .results').show();
