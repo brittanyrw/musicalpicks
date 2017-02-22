@@ -297,20 +297,12 @@ function displayUserGenreSearchResults(results){
   } 
 
 $(document).ready(function() {
-    $('.question-display').hide();
-    $('.question-progress').hide();
-    $('.question-image').hide();
-    $('.results').hide();
-    $('.additional-results').hide();
-    $('.finish').hide();
+    $('.question-display, .question-progress, .question-image, .results, .additional-results, .finish').hide();
 
     $('.start').click(function(event) { 
       event.preventDefault();
-      $('.home-text-display, .header-img').hide();
-      $('.home-image').hide();
-      $('.question-display').show();
-      $('.question-progress').show();
-      $('.question-image').show();
+      $('.home-text-display, .header-img, .home-image').hide();
+      $('.question-display, .question-progress, .question-image').show();
       displayQuizQuestions();
       calculateGenreScores();
     });
@@ -326,24 +318,18 @@ $(document).ready(function() {
     });
 
     $('.finish').click(function(event){
-      $('.question-display').hide();
-      $('.question-progress').hide();
-      $('.question-image').hide();
+      $('.question-display, .question-progress, .question-image').hide();
       searchByGenre();
-      $('.header-img').show();
-      $('.results').show();
+      $('.header-img, .results').show();
         });
 
     $('.restart').click(function(event){
       state.current = 0;
       emptyGenreScores();
       $('.results-view').html('');
-      $('.results').hide();
       $('.choices').html('');
-      $('.additional-results').hide();
-      $('.home-text-display, .header-img').show();
-      $('.home-image').show();
-      $('.finish').hide();
+      $('.results, .additional-results, .finish').hide();
+      $('.home-text-display, .header-img, .home-image').show();
     });
 
     $('.search').click(function(event) {
