@@ -25,12 +25,12 @@
 		.st18{fill:url(#New_Pattern_Swatch_44);stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st19{fill:#BF2121;}
 	.st20{opacity:0.49;}
-	.st21{fill:#FFFFFF;stroke:#231F20;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-	.st22{display:none;opacity:0.26;}
-	.st23{display:inline;fill:url(#New_Pattern_Swatch_23);}
-	.st24{font-family:'Oswald-Light';}
-	.st25{font-size:102.1153px;}
-	.st26{font-family:'Oswald-Medium';}
+	.st21{font-family:'Oswald-Medium';}
+	.st22{font-size:102.1153px;}
+	.st23{font-family:'Oswald-Light';}
+	.st24{fill:#FFFFFF;stroke:#231F20;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st25{display:none;opacity:0.26;}
+	.st26{display:inline;fill:url(#New_Pattern_Swatch_23);}
 </style>
 <pattern  x="-147.8" y="-15" width="10" height="10" patternUnits="userSpaceOnUse" id="New_Pattern_Swatch_23" viewBox="0 -10 10 10" style="overflow:visible;">
 	<g>
@@ -209,127 +209,132 @@
 			c11.6,0,21.1-9.4,21.1-21.1V235.1C733.2,223.4,723.8,214,712.1,214L712.1,214z"/>
 	</g>
 	<g>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 344.3472 747.75)" class="st21" cx="548.9" cy="200.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 375.8627 779.9882)" class="st21" cx="580.9" cy="200.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 407.3782 812.2263)" class="st21" cx="612.9" cy="200.9" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 438.8937 844.4645)" class="st21" cx="644.9" cy="201.1" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 470.4092 876.7026)" class="st21" cx="676.9" cy="201.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 501.9247 908.9407)" class="st21" cx="708.9" cy="201.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 152.813 552.7631)" class="st21" cx="354.9" cy="199.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 184.3285 585.0013)" class="st21" cx="386.9" cy="199.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 215.8441 617.2394)" class="st21" cx="418.9" cy="199.9" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 247.3596 649.4775)" class="st21" cx="450.9" cy="200.1" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 278.8751 681.7157)" class="st21" cx="482.9" cy="200.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 310.3906 713.9538)" class="st21" cx="514.9" cy="200.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -36.7438 361.7686)" class="st21" cx="163.9" cy="199.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -5.2282 394.0067)" class="st21" cx="195.9" cy="199.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 26.2873 426.2448)" class="st21" cx="227.9" cy="199.9" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 57.8028 458.483)" class="st21" cx="259.9" cy="200.1" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 89.3183 490.7211)" class="st21" cx="291.9" cy="200.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 120.8338 522.9593)" class="st21" cx="323.9" cy="200.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -133.7314 263.4961)" class="st21" cx="65.9" cy="199.1" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -102.2159 295.7342)" class="st21" cx="97.9" cy="199.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -70.7003 327.9724)" class="st21" cx="129.9" cy="199.6" rx="8.3" ry="8.5"/>
-	</g>
-	<g>
 		<path d="M756.9,182.9c8.9,0,16.1,7.2,16.1,16.1v179.8c0,8.9-7.2,16.1-16.1,16.1H21.1c-8.9,0-16.1-7.2-16.1-16.1V199
 			c0-8.9,7.2-16.1,16.1-16.1H756.9 M756.9,177.9H21.1C9.4,177.9,0,187.3,0,199v179.8c0,11.6,9.4,21.1,21.1,21.1h735.8
 			c11.6,0,21.1-9.4,21.1-21.1V199C778,187.3,768.6,177.9,756.9,177.9L756.9,177.9z"/>
 	</g>
-</g>
-<g id="Left_Lights">
-	<ellipse class="st21" cx="751.9" cy="360" rx="8.3" ry="8.5"/>
-	<ellipse class="st21" cx="751.9" cy="328" rx="8.3" ry="8.5"/>
-	<ellipse class="st21" cx="751.9" cy="296" rx="8.3" ry="8.5"/>
-	<ellipse class="st21" cx="751.9" cy="264" rx="8.3" ry="8.5"/>
-	<ellipse class="st21" cx="751.9" cy="232" rx="8.3" ry="8.5"/>
-	<ellipse class="st21" cx="743.9" cy="204" rx="8.3" ry="8.5"/>
-	<g>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 166.3447 926.3975)" class="st21" cx="549.9" cy="379.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 197.8602 958.6356)" class="st21" cx="581.9" cy="379.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 229.3757 990.8737)" class="st21" cx="613.9" cy="379.9" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 260.8913 1023.1119)" class="st21" cx="645.9" cy="380.1" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 292.4068 1055.35)" class="st21" cx="677.9" cy="380.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 323.9223 1087.5881)" class="st21" cx="709.9" cy="380.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 350.7258 1112.595)" class="st21" cx="735.9" cy="379.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -25.1894 731.4105)" class="st21" cx="355.9" cy="378.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 6.3261 763.6487)" class="st21" cx="387.9" cy="378.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 37.8416 795.8868)" class="st21" cx="419.9" cy="378.9" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 69.3571 828.125)" class="st21" cx="451.9" cy="379.1" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 100.8726 860.3631)" class="st21" cx="483.9" cy="379.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 132.3881 892.6013)" class="st21" cx="515.9" cy="379.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -214.7462 540.416)" class="st21" cx="164.9" cy="378.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -183.2307 572.6541)" class="st21" cx="196.9" cy="378.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -151.7152 604.8923)" class="st21" cx="228.9" cy="378.9" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -120.1997 637.1304)" class="st21" cx="260.9" cy="379.1" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -88.6842 669.3686)" class="st21" cx="292.9" cy="379.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -57.1687 701.6067)" class="st21" cx="324.9" cy="379.6" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -311.7338 442.1435)" class="st21" cx="66.9" cy="378.1" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -280.2183 474.3817)" class="st21" cx="98.9" cy="378.4" rx="8.3" ry="8.5"/>
-		
-			<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -248.7028 506.6198)" class="st21" cx="130.9" cy="378.6" rx="8.3" ry="8.5"/>
+	<g id="Text">
+		<text transform="matrix(1 0 0 1 145.4999 322.3037)"><tspan x="0" y="0" class="st5 st21 st22">Musical</tspan><tspan x="301.1" y="0" class="st5 st23 st22">Picks</tspan></text>
 	</g>
-	<ellipse class="st21" cx="23.9" cy="360" rx="8.3" ry="8.5"/>
-	<ellipse class="st21" cx="35.9" cy="379" rx="8.3" ry="8.5"/>
-	<ellipse class="st21" cx="23.9" cy="328" rx="8.3" ry="8.5"/>
-	<ellipse class="st21" cx="23.9" cy="296" rx="8.3" ry="8.5"/>
-	<ellipse class="st21" cx="23.9" cy="264" rx="8.3" ry="8.5"/>
-	<ellipse class="st21" cx="23.9" cy="232" rx="8.3" ry="8.5"/>
-	<ellipse class="st21" cx="31.9" cy="204" rx="8.3" ry="8.5"/>
+</g>
+<g id="Lights_1_">
+	<g id="Lights">
+		<g>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 344.3472 747.75)" class="st24" cx="548.9" cy="200.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 375.8627 779.9882)" class="st24" cx="580.9" cy="200.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 407.3782 812.2263)" class="st24" cx="612.9" cy="200.9" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 438.8937 844.4645)" class="st24" cx="644.9" cy="201.1" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 470.4092 876.7026)" class="st24" cx="676.9" cy="201.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 501.9247 908.9407)" class="st24" cx="708.9" cy="201.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 152.813 552.7631)" class="st24" cx="354.9" cy="199.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 184.3285 585.0013)" class="st24" cx="386.9" cy="199.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 215.8441 617.2394)" class="st24" cx="418.9" cy="199.9" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 247.3596 649.4775)" class="st24" cx="450.9" cy="200.1" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 278.8751 681.7157)" class="st24" cx="482.9" cy="200.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 310.3906 713.9538)" class="st24" cx="514.9" cy="200.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -36.7438 361.7686)" class="st24" cx="163.9" cy="199.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -5.2282 394.0067)" class="st24" cx="195.9" cy="199.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 26.2873 426.2448)" class="st24" cx="227.9" cy="199.9" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 57.8028 458.483)" class="st24" cx="259.9" cy="200.1" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 89.3183 490.7211)" class="st24" cx="291.9" cy="200.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 120.8338 522.9593)" class="st24" cx="323.9" cy="200.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -133.7314 263.4961)" class="st24" cx="65.9" cy="199.1" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -102.2159 295.7342)" class="st24" cx="97.9" cy="199.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -70.7003 327.9724)" class="st24" cx="129.9" cy="199.6" rx="8.3" ry="8.5"/>
+		</g>
+		<g>
+			<ellipse class="st24" cx="751.9" cy="360" rx="8.3" ry="8.5"/>
+			<ellipse class="st24" cx="751.9" cy="328" rx="8.3" ry="8.5"/>
+			<ellipse class="st24" cx="751.9" cy="296" rx="8.3" ry="8.5"/>
+			<ellipse class="st24" cx="751.9" cy="264" rx="8.3" ry="8.5"/>
+			<ellipse class="st24" cx="751.9" cy="232" rx="8.3" ry="8.5"/>
+			<ellipse class="st24" cx="743.9" cy="204" rx="8.3" ry="8.5"/>
+		</g>
+		<g>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 166.3447 926.3975)" class="st24" cx="549.9" cy="379.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 197.8602 958.6356)" class="st24" cx="581.9" cy="379.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 229.3757 990.8737)" class="st24" cx="613.9" cy="379.9" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 260.8913 1023.1119)" class="st24" cx="645.9" cy="380.1" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 292.4068 1055.35)" class="st24" cx="677.9" cy="380.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 323.9223 1087.5881)" class="st24" cx="709.9" cy="380.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 350.7258 1112.595)" class="st24" cx="735.9" cy="379.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -25.1894 731.4105)" class="st24" cx="355.9" cy="378.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 6.3261 763.6487)" class="st24" cx="387.9" cy="378.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 37.8416 795.8868)" class="st24" cx="419.9" cy="378.9" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 69.3571 828.125)" class="st24" cx="451.9" cy="379.1" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 100.8726 860.3631)" class="st24" cx="483.9" cy="379.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 132.3881 892.6013)" class="st24" cx="515.9" cy="379.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -214.7462 540.416)" class="st24" cx="164.9" cy="378.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -183.2307 572.6541)" class="st24" cx="196.9" cy="378.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -151.7152 604.8923)" class="st24" cx="228.9" cy="378.9" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -120.1997 637.1304)" class="st24" cx="260.9" cy="379.1" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -88.6842 669.3686)" class="st24" cx="292.9" cy="379.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -57.1687 701.6067)" class="st24" cx="324.9" cy="379.6" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -311.7338 442.1435)" class="st24" cx="66.9" cy="378.1" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -280.2183 474.3817)" class="st24" cx="98.9" cy="378.4" rx="8.3" ry="8.5"/>
+			
+				<ellipse transform="matrix(7.556108e-03 -1 1 7.556108e-03 -248.7028 506.6198)" class="st24" cx="130.9" cy="378.6" rx="8.3" ry="8.5"/>
+		</g>
+		<g>
+			<ellipse class="st24" cx="23.9" cy="360" rx="8.3" ry="8.5"/>
+			<ellipse class="st24" cx="35.9" cy="379" rx="8.3" ry="8.5"/>
+			<ellipse class="st24" cx="23.9" cy="328" rx="8.3" ry="8.5"/>
+			<ellipse class="st24" cx="23.9" cy="296" rx="8.3" ry="8.5"/>
+			<ellipse class="st24" cx="23.9" cy="264" rx="8.3" ry="8.5"/>
+			<ellipse class="st24" cx="23.9" cy="232" rx="8.3" ry="8.5"/>
+			<ellipse class="st24" cx="31.9" cy="204" rx="8.3" ry="8.5"/>
+		</g>
+	</g>
 </g>
 <g id="Layer_4">
-	<g class="st22">
-		<path class="st23" d="M65.4,359.5c-10.2,0-18.6-8.3-18.6-18.6V235.1c0-10.2,8.3-18.6,18.6-18.6h647c10.2,0,18.6,8.3,18.6,18.6
+	<g class="st25">
+		<path class="st26" d="M65.4,359.5c-10.2,0-18.6-8.3-18.6-18.6V235.1c0-10.2,8.3-18.6,18.6-18.6h647c10.2,0,18.6,8.3,18.6,18.6
 			v105.8c0,10.2-8.3,18.6-18.6,18.6H65.4z"/>
 		<path class="st4" d="M712.4,219c8.9,0,16.1,7.2,16.1,16.1v105.8c0,8.9-7.2,16.1-16.1,16.1h-647c-8.9,0-16.1-7.2-16.1-16.1V235.1
 			c0-8.9,7.2-16.1,16.1-16.1H712.4 M712.4,214h-647c-11.6,0-21.1,9.4-21.1,21.1v105.8c0,11.6,9.4,21.1,21.1,21.1h647
 			c11.6,0,21.1-9.4,21.1-21.1V235.1C733.5,223.4,724,214,712.4,214L712.4,214z"/>
-	</g>
-	<g>
-		<text transform="matrix(1 0 0 1 444.7138 322.3037)" class="st5 st24 st25">Picks</text>
-		<text transform="matrix(1 0 0 1 145.4999 322.3037)" class="st5 st26 st25">Musical</text>
 	</g>
 </g>
 </svg>
