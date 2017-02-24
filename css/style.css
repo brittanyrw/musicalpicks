@@ -28,15 +28,12 @@ body {
 
 .start, .next, .finish, .restart, .search, .add-search {
   font-size: 1.5em;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   width: 230px;
   border: none;
   padding: 10px 60px;
   color: white;
   background: #C1272D; }
-
-.next, .finish {
-  box-shadow: 5px 5px 0px white; }
 
 .start, .restart, .search, .add-search {
   box-shadow: 5px 5px 0px #1C2833; }
@@ -95,39 +92,39 @@ li {
   color: white;
   background: #C1272D; }
 
+.next {
+  box-shadow: 5px 5px 0px white; }
+
+.finish {
+  color: #1C2833;
+  background: white;
+  box-shadow: 5px 5px 0px #C1272D; }
+
 /* RESULTS VIEW */
 .results-view {
   width: 95%;
   margin: 0 auto; }
 
 .result-item {
-  height: 400px;
+  height: 450px;
   border: 5px solid #1C2833;
   background-size: cover; }
 
-/*p.result-title {
-    position: absolute;
-    bottom: 0;
-    font-size: 50px;
-    background-color: rgba(193,39,45,0.75);
-    width: 100%;
-    padding: 20px;
-    color: white;
-    margin: 0;
-    font-family: $open;
-}*/
 a.result-link {
   overflow: auto;
   margin-bottom: 20px;
   display: block; }
 
 /* ADDITIONAL RESULTS */
+.genre-buttons {
+  margin: 0 0 20px 0; }
+
 .genre {
   font-size: 1em;
-  margin: 0 auto;
+  margin: 5px;
   border: none;
   padding: 10px;
-  margin: 10px;
+  width: 120px;
   color: white;
   background: #1C2833; }
 
@@ -135,7 +132,8 @@ a.result-link {
   transform: translateY(4px); }
 
 .genre-restart {
-  margin: 0 0 10px 0; }
+  margin: 0 0 10px 0;
+  font-size: 1em; }
 
 /* FOOTER */
 footer {
@@ -177,7 +175,16 @@ footer {
     margin: 0 auto; }
 
   a:hover {
-    color: #C1272D; } }
+    color: #C1272D; }
+
+  .start, .next, .finish, .restart, .search, .add-search {
+    margin-left: 5px;
+    margin-right: 5px; }
+
+  .result-item {
+    height: 600px;
+    width: 400px;
+    margin: auto; } }
 @media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .main-container {
     width: 70%; }
@@ -190,7 +197,9 @@ footer {
     width: 70%; }
 
   .start, .next, .finish, .restart, .search, .add-search {
-    font-size: 1em; }
+    font-size: 1em;
+    margin-left: 5px;
+    margin-right: 5px; }
 
   .home-text-display, .results-text-display {
     font-size: 1em;
