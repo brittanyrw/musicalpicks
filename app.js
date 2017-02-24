@@ -253,7 +253,7 @@ function displayMusicalsResults(results){
   for (var i = 0; i < results.length; i++){
         $('.results-view').append( 
         '<a href="https://www.themoviedb.org/movie/' + results[i].id + '" class="result-link">' + 
-        '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w342'  + results[i].poster_path + '\'">' + '</div></a>' );
+        '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w342'  + results[i].poster_path + '\')">' + '</div></a>' );
   }
 }
 
