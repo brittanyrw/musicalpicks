@@ -232,6 +232,7 @@ function emptyGenreScores(){
   }
 }
 
+
 function searchByGenre(){
   var settings = {
     "async": true,
@@ -255,8 +256,6 @@ function displayMusicalsResults(results){
         '<div class="result-item" style="background-image: url(\'https://image.tmdb.org/t/p/w342'  + results[i].poster_path + '\'">' + '</div></a>' );
   }
 }
-
-var userGenre = [];
 
 function userGenreSearchList(){
     $('.genre-buttons').on('click','button',function(){
@@ -282,8 +281,6 @@ function searchByUserGenre(){
 
   $.ajax(settings).done(function (response) {
     displayUserGenreSearchResults(response.results);
-    console.log(response.results);
-    console.log(userGenre);
   });
 
 }
@@ -319,16 +316,17 @@ $(document).ready(function() {
     });
 
     $('.finish').click(function(event){
-      /*$('.search').hide(); //hiding additional search function while developing feature*/
-      $('.question-display, .question-progress, .question-image').hide();
       searchByGenre();
+      $('.question-display, .question-progress, .question-image').hide();
       $('.header-img, .results').show();
         });
 
     $('.restart').click(function(event){
       state.current = 0;
+      userGenre.length = 0;
       emptyGenreScores();
       $('.results-view').html('');
+      $('.additional-results-items').html('');
       $('.choices').html('');
       $('.results, .additional-results, .finish').hide();
       $('.home-text-display, .header-img, .home-image').show();

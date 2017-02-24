@@ -19,7 +19,7 @@ body {
   padding: 20px;
   margin: 20px auto;
   border: 5px solid #1C2833;
-  font-size: 1em; }
+  font-size: .7em; }
   .home-text-display h2, .results-text-display h2 {
     font-family: "Open Sans", sans-serif; }
   .home-text-display p, .results-text-display p {
@@ -29,6 +29,7 @@ body {
 .start, .next, .finish, .restart, .search, .add-search {
   font-size: 1.5em;
   margin: 0 auto;
+  width: 230px;
   border: none;
   padding: 10px 60px;
   margin: 10px;
@@ -48,7 +49,7 @@ header {
     margin: 0 auto;
     width: 100%; }
 
-.start:active, .next:active {
+.start:active, .next:active, .search:active, .finish:active, .restart:active {
   transform: translateY(4px); }
 
 .illustration {
@@ -63,7 +64,7 @@ header {
 /* QUESTION VIEW */
 .question-display {
   padding: 10px;
-  margin: 20px auto;
+  margin: 21px auto;
   background: #1C2833;
   font-size: .7em;
   color: white; }
@@ -85,7 +86,7 @@ ul {
 
 li {
   padding: 10px;
-  margin: 20px;
+  margin: 20px 0;
   font-size: 1.4em;
   font-family: "Open Sans", sans-serif;
   background: white;
@@ -130,6 +131,12 @@ a.result-link {
   margin: 10px;
   color: white;
   background: #1C2833; }
+
+.genre:active {
+  transform: translateY(4px); }
+
+.genre-restart {
+  margin: 0 0 10px 0; }
 
 /* FOOTER */
 footer {

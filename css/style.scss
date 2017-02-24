@@ -30,7 +30,7 @@ body {
 	padding: 20px;
 	margin: 20px auto;
 	border: 5px solid $darkgray;
-	font-size: 1em;
+	font-size: .7em;
 	h2 {
 		font-family: $open;
 	}
@@ -43,6 +43,7 @@ body {
 .start, .next, .finish, .restart, .search, .add-search {
 	font-size: 1.5em;
 	margin: 0 auto;
+	width: 230px;
 	border: none;
 	padding: 10px 60px;
 	margin: 10px;
@@ -68,7 +69,7 @@ header {
 	}
 }
 
-.start:active, .next:active {
+.start:active, .next:active, .search:active, .finish:active, .restart:active {
 	transform: translateY(4px);
 }
 
@@ -87,7 +88,7 @@ header {
 
 .question-display {
 	padding: 10px;
-	margin: 20px auto;
+	margin: 21px auto;
 	background: $darkgray;
 	font-size: .7em;
 	color: white;
@@ -114,7 +115,7 @@ ul {
 
 li {
 	padding: 10px;
-	margin: 20px;
+	margin: 20px 0;
 	font-size: 1.4em;
 	font-family: $open;
 	background: white;
@@ -168,6 +169,14 @@ a.result-link {
 	margin: 10px;
 	color: white;
 	background: $darkgray;
+}
+
+.genre:active {
+	transform: translateY(4px);
+}
+
+.genre-restart {
+	margin: 0 0 10px 0;
 }
 
 /* FOOTER */
