@@ -311,12 +311,14 @@ $(document).ready(function() {
         displayQuizQuestions();
         checkGenreScores();
       } else {
+        $('.next').hide();
         $('.finish').show();
+        searchByGenre();
       }
     });
 
+
     $('.finish').click(function(event){
-      searchByGenre();
       $('.question-display, .question-progress, .question-image').hide();
       $('.header-img, .results').show();
         });
