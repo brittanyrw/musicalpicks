@@ -108,7 +108,8 @@ li {
 .result-item {
   height: 450px;
   border: 5px solid #1C2833;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
 
 a.result-link {
   overflow: auto;
@@ -166,6 +167,11 @@ footer {
   width: 190px; }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 767px) and (min-width: 426px) and (-webkit-min-device-pixel-ratio: 1) {
+  .result-item {
+    height: 600px;
+    width: 400px;
+    margin: auto; } }
 @media screen and (max-width: 1023px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   .main-container {
     width: 90%; }

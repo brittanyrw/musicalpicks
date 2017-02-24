@@ -143,6 +143,7 @@ li {
     height: 450px;
     border: 5px solid $darkgray;
     background-size: cover;
+    background-position: center center;
 }
 
 a.result-link {
@@ -215,6 +216,15 @@ footer {
 }
 
 /* MEDIA QUERIES */
+
+
+@media screen and (max-width: 767px) and (min-width: 426px) and (-webkit-min-device-pixel-ratio: 1) { 
+	  	.result-item {
+		height: 600px;
+		width: 400px;
+		margin: auto;
+	}
+}
 
 @media screen and (max-width: 1023px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) { 
   	.main-container {
