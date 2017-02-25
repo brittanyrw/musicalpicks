@@ -30,8 +30,8 @@ var state = {
       text: "Are you looking for the real deal or make believe?",
       choices: [
         {
-          title: "Plots based on facts",
-          genre: 18,
+          title: "Plots based on real life",
+          genre: 10751,
         },{
           title: "Fantasy is fun",
           genre: 14,
@@ -52,7 +52,7 @@ var state = {
           genre: 18,
         },{
           title: "No, only happy stories for me",
-          genre: 12,
+          genre: 35,
         }
       ],
       image: "imgs/dressingroom.svg",
