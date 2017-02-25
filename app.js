@@ -27,6 +27,21 @@ var state = {
       progress: "imgs/quiz-progress-one.svg",
     },
     {
+      text: "Are you looking for the real deal or make believe?",
+      choices: [
+        {
+          title: "Plots based on facts",
+          genre: 18,
+        },{
+          title: "Fantasy is fun",
+          genre: 14,
+        }
+      ],
+      image: "imgs/costumes.svg",
+      alt: "theatre dressing room illustration",
+      progress: "imgs/quiz-progress-two.svg",
+    },
+    {
       text: "Do you like being scared?",
       choices: [
         {
@@ -37,10 +52,10 @@ var state = {
           genre: 18,
         },{
           title: "No, only happy stories for me",
-          genre: 35,
+          genre: 12,
         }
       ],
-      image: "imgs/costumes.svg",
+      image: "imgs/dressingroom.svg",
       alt: "theatre dressing room illustration",
       progress: "imgs/quiz-progress-three.svg",
     },
@@ -61,7 +76,7 @@ var state = {
           genre: 12,
         }
       ],
-      image: "imgs/dressingroom.svg",
+      image: "imgs/costumes.svg",
       alt: "theatre dressing room illustration",
       progress: "imgs/quiz-progress-four.svg",
     },
@@ -82,7 +97,7 @@ var state = {
           genre: 36,
         }
       ],
-      image: "imgs/costumes.svg",
+      image: "imgs/dressingroom.svg",
       alt: "theatre dressing room illustration",
       progress: "imgs/quiz-progress-five.svg",
     },   
