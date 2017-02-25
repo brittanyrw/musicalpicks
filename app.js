@@ -298,7 +298,7 @@ $(document).ready(function() {
     $('.start').click(function(event) { 
       event.preventDefault();
       $('.home-text-display, .header-img, .home-image').hide();
-      $('.question-display, .question-progress, .question-image').show();
+      $('.question-display, .question-progress, .question-image, .next').show();
       displayQuizQuestions();
       calculateGenreScores();
     });
@@ -329,7 +329,7 @@ $(document).ready(function() {
       $('.additional-results-items').html('');
       $('.choices').html('');
       $('.results, .additional-results, .finish').hide();
-      $('.home-text-display, .header-img, .home-image').show();
+      $('.home-text-display, .header-img, .home-image, .next').show();
     });
 
     $('.search').click(function(event) {
