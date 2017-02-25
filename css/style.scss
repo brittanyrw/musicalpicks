@@ -48,6 +48,7 @@ body {
 	padding: 10px 60px;
 	color: white;
 	background: $red;
+	cursor: pointer;
 }
 
 .start, .restart, .search, .add-search {
@@ -115,6 +116,7 @@ li {
 	font-family: $open;
 	background: white;
 	color: $darkgray;
+	cursor: pointer;
 }
 
 .chosen {
@@ -167,6 +169,7 @@ a.result-link {
 	width: 120px;
 	color: white;
 	background: $darkgray;
+	cursor: pointer;
 }
 
 .genre:active {

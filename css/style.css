@@ -33,7 +33,8 @@ body {
   border: none;
   padding: 10px 60px;
   color: white;
-  background: #C1272D; }
+  background: #C1272D;
+  cursor: pointer; }
 
 .start, .restart, .search, .add-search {
   box-shadow: 5px 5px 0px #1C2833; }
@@ -86,7 +87,8 @@ li {
   font-size: 1.4em;
   font-family: "Open Sans", sans-serif;
   background: white;
-  color: #1C2833; }
+  color: #1C2833;
+  cursor: pointer; }
 
 .chosen {
   color: white;
@@ -127,7 +129,8 @@ a.result-link {
   padding: 10px;
   width: 120px;
   color: white;
-  background: #1C2833; }
+  background: #1C2833;
+  cursor: pointer; }
 
 .genre:active {
   transform: translateY(4px); }

@@ -232,7 +232,6 @@ function emptyGenreScores(){
   }
 }
 
-
 function searchByGenre(){
   var settings = {
     "async": true,
@@ -257,11 +256,10 @@ function displayMusicalsResults(results){
   }
 }
 
+userGenre = [];
+
 function userGenreSearchList(){
     $('.genre-buttons').on('click','button',function(){
-      // if (userGenre.indexOf($(this).attr('id')) == -1) {
-      //   userGenre.push(parseInt($(this).attr('id')));
-      // }
       userGenre = [];
       userGenre[0] = $(this).attr('id');
       searchByUserGenre();
