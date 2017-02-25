@@ -31,7 +31,7 @@ var state = {
       choices: [
         {
           title: "Plots based on real life",
-          genre: 10751,
+          genre: 10402,
         },{
           title: "Fantasy is fun",
           genre: 14,
@@ -46,7 +46,7 @@ var state = {
       choices: [
         {
           title: "The more terrifying the better",
-          genre: 28,
+          genre: 12,
         },{
           title: "I prefer suspense over jump scares",
           genre: 18,
