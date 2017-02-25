@@ -146,6 +146,18 @@ li {
     border: 5px solid $darkgray;
     background-size: cover;
     background-position: center center;
+    position: relative;
+    p {
+    	position: absolute;
+    	color: white;
+    	background: $red;
+    	width: 100%;
+    	padding: 10px;
+    	bottom: -20px;
+    	border-top: 5px solid $darkgray;
+    	border-bottom: 5px solid $darkgray;
+    	display: block;
+    }
 }
 
 a.result-link {
