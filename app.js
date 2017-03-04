@@ -84,7 +84,7 @@ var state = {
       text: "From the musical lyrics below, which do you like the most?",
       choices: [
         {
-          title: "At least out loud, I won't say I'm in love (Herules)",
+          title: "At least out loud, I won't say I'm in love (Hercules)",
           genre: 10749,
         },{
           title: "We're Cheetah Girls, Cheetah Sisters (Cheetah Girls)",
