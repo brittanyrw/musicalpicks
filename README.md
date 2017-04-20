@@ -1,5 +1,7 @@
 # MusicalPicks
 
+![MusicalPicks Screenshots](imgs/musicalpicks_screenshots.png?raw=true "MusicalPicks Screenshots")
+
 [Demo MusicalPicks Here](https://brittanyrw.github.io/musicalpicks/)
 
 ## Summary
@@ -14,7 +16,3 @@ There are hundreds of musical movies for users to discover. This app helps users
 * jQuery
 * The Movie Database API
 * Adobe Illustrator
-
-## Screenshots
-
-![MusicalPicks Screenshots](imgs/musicalpicks_screenshots.png?raw=true "MusicalPicks Screenshots")
