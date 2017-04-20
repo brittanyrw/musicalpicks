@@ -17,14 +17,4 @@ There are hundreds of musical movies for users to discover. This app helps users
 
 ## Screenshots
 
-Home Page View
-![MusicalPicks Home Page](http://i.imgur.com/jp3AH7q.png?1)
-
-Question View
-![MusicalPicks Question View](http://i.imgur.com/Ecc6sfs.png)
-
-Quiz End and Results View
-![MusicalPicks Results View](http://i.imgur.com/pwIJIDJ.jpg)
-
-Search for Additional Musicals View
-![MusicalPicks Additional Results View](http://i.imgur.com/K3xz7Qs.jpg)
+![MusicalPicks Screenshots](imgs/musicalpicks_screenshots.png?raw=true "MusicalPicks Screenshots")
