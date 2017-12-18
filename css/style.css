@@ -207,10 +207,10 @@ footer {
     margin: auto; } }
 @media screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .main-container {
-    width: 70%; }
+    width: 50%; }
 
   footer {
-    width: 70%;
+    width: 50%;
     margin: 0 auto; }
 
   header .header-img {
