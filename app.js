@@ -187,7 +187,6 @@ var categories = {
 };
 
 function displayQuizQuestions(){
-  var currentQuestion = state.current;
   $('.question').text(state.questions[state.current].text);
   $('.question-image').html('<img src="' + state.questions[state.current].image + '" alt="' + state.questions[state.current].imagealt + '">');
   $(".question-progress-img").attr("src", state.questions[state.current].progress);
@@ -199,7 +198,7 @@ function displayQuizQuestions(){
 
 function calculateGenreScores(){    
     $('.choices').on('click','li',function(){
-      if($('.chosen').length==0){
+      if($('.chosen').length===0){
         var genre = $(this).attr('id');
         $(this).addClass('chosen');
         for (var i = 0; i < categories.genres.length; i++) {
@@ -209,7 +208,6 @@ function calculateGenreScores(){
         }
       }
     });
-  
 }
 
 var genresToMatch = [];
